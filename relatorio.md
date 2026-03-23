@@ -13,13 +13,17 @@ Nessa atividade, mostra como é a execução do docker junto com Django, podendo
 3. Agora pode usar o docker run para ele funcionar junto com docker local aberto!
 ![usando o dockerfile para run](/imagens/Captura%20de%20tela%202026-03-23%20081616.png)
 
-4. Precisa usar esse comando para criar sua conta admin para poder mexer o site, precisa colocar nome do usuario, email é opcional, senha e confirmar novamente a senha
-![conta admin](/imagens/Captura%20de%20tela%202026-03-23%20081616.png)
+4. Precisa agora usar os três comandos, o primeiro será django-admin startproject myproject . para criar o projeto Django, depois python3 manage.py startapp webapp para fazer o Django ser aplicado e funcionar, e python3 manage.py migrate para criar o arquivo do banco de dados, lembrando que preisa modificar alguns arquivos como webapp no INSTALLED_APPS no myproject/settings.py e configurar ALLOWED_HOSTS, colocando '*'
+![comandos](/imagens/Captura%20de%20tela%202026-03-23%20085849.png)
 
-5. Depois disso tudo, chamamos o servidor para o site funcionar! 
+
+5. Precisa usar esse comando para criar sua conta admin para poder mexer o site, precisa colocar nome do usuario, email é opcional, senha e confirmar novamente a senha, com esse comando  python3 manage.py createsuperuser     
+![conta admin](/imagens/Captura%20de%20tela%202026-03-23%20085923.png)
+
+6. Depois disso tudo, chamamos o servidor para o site funcionar! Com esse comando python3 manage.py runserver 0.0.0.0:8000
 ![servidor](/imagens/Captura%20de%20tela%202026-03-23%20081719.png)
 
-6. No fim, receberá o resultado das páginas como esse comum do usuário
+7. No fim, receberá o resultado das páginas como esse comum do usuário, pelo link do localhost:8000
 ![servidor](/imagens/Captura%20de%20tela%202026-03-23%20081532.png)
 
 OBS: Não terei como colocar a foto do admin aberto por ter tido problema com senha, já que geralmente pede o nome do usuário e senha que criou antes.
