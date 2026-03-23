@@ -20,13 +20,13 @@
 ## Atividade
 
 ### Checklist
-- [ ] 1. Preparação do projeto
-  - [ ] 1.1: Fork desse repositório para sua conta pessoal
-  - [ ] 1.2: Clone do repositório github (remoto) para o computador local
-  - [ ] 1.3: Na pasta do repositório, crie a pasta `app`
-  - [ ] 1.4: Criar arquivo `app/requirements.txt`
-- [ ] 2. Criar a imagem docker e executar o conteiner
-  - [ ] 2.1: Criar o arquivo `app/Dockerfile.dev`
+- [x] 1. Preparação do projeto
+  - [x] 1.1: Fork desse repositório para sua conta pessoal
+  - [x] 1.2: Clone do repositório github (remoto) para o computador local
+  - [x] 1.3: Na pasta do repositório, crie a pasta `app`
+  - [x] 1.4: Criar arquivo `app/requirements.txt`
+- [x] 2. Criar a imagem docker e executar o conteiner
+  - [x] 2.1: Criar o arquivo `app/Dockerfile.dev`
   - [ ] 2.2: Construir a imagem de desenvolvimento
   - [ ] 2.3: Executar container de desenvolvimento com volume mapeado
 - [ ] 3. Criar e configurar a aplicação Django
